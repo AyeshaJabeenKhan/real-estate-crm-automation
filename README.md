@@ -18,6 +18,7 @@ A 7-stage deal pipeline modeled on a real property sales cycle:
 New Lead → Contacted → Qualified → Site Visit Scheduled → Offer Made → 
 Closed Won / Closed Lost
 
+
 ![Pipeline](screenshots/01-pipeline-stages.png)
 
 ### 2. Real-Estate-Specific Data Model
@@ -28,11 +29,13 @@ sales, so I added custom properties on both Deals and Contacts:
 - Lead Source (Facebook Ad, Referral, Website, Instagram, Walk-in)
 - Site Visit Date
 
+
 ![Custom Properties](screenshots/02-custom-properties.png)
 
 ### 3. Sample Data
 15 contacts and deals distributed across every pipeline stage to 
 simulate an active, real-world pipeline rather than an empty demo.
+
 
 ![Deals Board](screenshots/03-deals-board.png)
 
@@ -51,7 +54,9 @@ a wait step + an activity-check filter to fire only when a lead has
 genuinely gone cold — this version proves the trigger → filter → 
 notification logic end-to-end.
 
+
 ![Zap Flow](screenshots/04-zap-flow.png)
+
 ![Slack Alert](screenshots/05-slack-alert.png)
 
 ## Tools Used
