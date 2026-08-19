@@ -12,7 +12,7 @@ In real estate, deals are usually lost because of slow response times rather tha
 I configured a 7-stage pipeline tailored to match a standard property buying journey:
 New Lead → Contacted → Qualified → Site Visit Scheduled → Offer Made → Closed Won / Closed Lost
 
-![Pipeline](./screenshots/01-pipeline-stages.png)
+![Pipeline](./Screenshots/01-pipeline-stages.png)
 
 ### 2. Tailored Data Model
 Default CRM fields aren't enough for property sales, so I created custom properties across both Deals and Contacts to capture crucial context:
@@ -21,20 +21,20 @@ Default CRM fields aren't enough for property sales, so I created custom propert
 - Lead Source (Facebook Ad, Referral, Website, Instagram, Walk-in)
 - Site Visit Date
 
-![Custom Properties](./screenshots/02-custom-properties.png)
+![Custom Properties](./Screenshots/02-custom-properties.png)
 
 ### 3. Realistic Sample Data
 To make sure it looks like a living workspace rather than an empty template, I populated 15 realistic contacts and deals distributed across all pipeline stages.
 
-![Deals Board](./screenshots/03-deals-board.png)
+![Deals Board](./Screenshots/03-deals-board.png)
 
 ### 4. Automated Lead Routing (HubSpot → Zapier → Slack)
 Whenever a deal changes stages, Zapier catches the update, filters it specifically for the "Contacted" stage via a backend ID match, and instantly fires a formatted notification into a dedicated Slack channel (`#lead-alerts`). It includes the deal name, budget, property type, and source so agents can act immediately.
 
 *Note on tool limits:* HubSpot’s free tier doesn't support native workflow triggers, and Zapier's free plan doesn't include a native delay action. Because of this, my current setup fires *instantly* on stage change. In an enterprise environment using paid tiers (Sales Hub Starter+ and Zapier paid), I'd implement a 3-day inactivity check to ensure alerts only trigger when a lead genuinely stalls. This build proves the core event-driven logic end-to-end.
 
-![Zap Flow](./screenshots/04-zap-flow.png)
-![Slack Alert](./screenshots/05-slack-alert.png)
+![Zap Flow](./Screenshots/04-zap-flow.png)
+![Slack Alert](./Screenshots/05-slack-alert.png)
 
 ## Tech Stack
 - **HubSpot CRM** (Free Tier)
