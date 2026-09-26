@@ -2,6 +2,19 @@
 
 Hey there! This project is a custom HubSpot CRM setup built specifically for real estate sales pipelines, paired with a real-time Slack alert system using Zapier. I built this to tackle the most common bottleneck in real estate sales: leads going cold because the team didn't follow up fast enough.
 
+📺 **Video Demo:** [Watch on YouTube](https://youtu.be/gE-LXuov7kA)  
+🌐 **Portfolio:** [ayeshasystems.online](https://ayeshasystems.online)
+
+---
+
+### 🎥 Project Walkthrough
+
+Click below to watch the quick video overview of the CRM pipeline and Slack automation in action:
+
+[![Real Estate CRM Pipeline Demo](https://img.youtube.com/vi/gE-LXuov7kA/maxresdefault.jpg)](https://youtu.be/gE-LXuov7kA "Real Estate CRM Pipeline Demo")
+
+---
+
 ## The Problem
 
 In real estate, deals are usually lost because of slow response times rather than a lack of interest. If a hot lead sits untouched for even a few hours, they'll likely move on to a competitor. I wanted to design a reliable workflow where the second a lead engages (moving into the "Contacted" stage), the entire sales team gets pinged instantly.
